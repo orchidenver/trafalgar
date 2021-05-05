@@ -5,6 +5,11 @@
     max-width: 1220px;
     margin: 0 auto;
 }
+.text-mulish {
+    font-family: Mulish;
+    font-style: normal;
+    color: #7D7987;
+}
 ul {
     list-style: none;
 }
@@ -94,4 +99,589 @@ body {
         left: -250px;
     }
 
+}
+.service {
+    margin-top: 188px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__inner {
+        position: relative;
+        z-index: 1;
+        
+        &::after {
+            content: url(/img/grid/element.png);
+            position: absolute;
+            z-index: -1;
+            right: 0px;
+            bottom: 465px;
+        }
+        &::before {
+            content: url(/img/grid/background.png);
+            position: absolute;
+            z-index: -1;
+            left: -350px;
+        }
+    }
+
+    &__title {
+        padding-bottom: 26px;
+        
+        text-align: center;
+        font-family: Mulish;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 56px;
+        color: #000000;
+    }
+
+    &__line {
+        content: "";
+        display: flex;
+        margin: 0 auto 33px;
+        width: 56px;
+        height: 2px;
+        background: #000000;
+        border-radius: 5px;
+    }
+
+    &__text {
+        @extend .text-mulish;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        width: 950px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    &__grid {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 354px);
+        grid-template-rows: repeat(2, 350px);
+        column-gap: 34px;
+        row-gap: 37px;
+        padding: 0 40px;
+        margin-bottom: 69px;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 350px;
+            height: 354px;
+            background-color: #FFFFFF;
+            box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+            border-radius: 20px;
+            padding: 55px 40px 47px;
+        }
+
+        &-img {
+            align-self:flex-start;
+        }
+
+        &-title {
+            font-family: Mulish;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 56px;
+            color: #000000;
+        }
+
+        &-text {
+            @extend .text-mulish;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+
+    &__button {
+        margin: 0 510px;
+        width: 200px;
+        height: 60px;
+        background-color: #fff;
+        border-color: #458FF6;
+        border-radius: 50px;
+
+        font-family: Mulish;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 60px;
+        color: #458FF6;
+        cursor: pointer;
+
+        &:hover {
+            background: #297ef5;
+            color: #FFFFFF;
+            transition: 0.3s;   
+        }
+    }
+}
+.prov {
+    margin-top: 220px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        &-img {
+            position: relative;
+            left:-75px;
+        }
+    }
+    
+    &__content {
+        width: 414px;
+        position: relative;
+        left:-75px;
+
+        &-title {
+            font-family: Mulish;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 56px;
+            color: #000000;
+            margin-bottom: 26px;
+        }
+        &-line {
+            content: "";
+            width: 56px;
+            height: 2px;
+            background: #000000;
+            border-radius: 5px;
+        }
+        &-text {
+            margin-top: 31px;
+            @extend .text-mulish;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+        &-button {
+            width: 200px;
+            height: 56px;
+            background-color: #fff;
+            border-color: #458FF6;
+            border-radius: 50px;
+
+            font-family: Mulish;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 60px;
+            color: #458FF6;
+            cursor: pointer;
+
+            &:hover{
+                background: #297ef5;
+                color: #FFFFFF;
+                transition: 0.3s;
+            }
+            }
+    }  
+}
+.offer {
+    margin-top: 229px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        &-img {
+            position: relative;
+            left: 75px;
+        }
+    }
+    &__content {
+        width: 380px;
+        position: relative;
+        left: 75px;
+
+        &-title {
+            width: 300px;
+            font-family: Mulish;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 48px;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+        &-line {
+            content: "";
+            width: 56px;
+            height: 2px;
+            background: #000000;
+            border-radius: 5px;
+        }
+        &-text {
+            margin-top: 31px;
+            @extend .text-mulish;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+        &-button {
+            width: 200px;
+            height: 56px;
+            background-color: #fff;
+            border-color: #458FF6;
+            border-radius: 50px;
+            position: relative;
+
+            font-family: Mulish;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 60px;
+            color: #458FF6;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover{
+                background: #297ef5;
+                color: #FFFFFF;
+                transition: 0.3s;
+            }
+
+            &::after {
+                content: url(/img/offer/2.svg);
+                position: relative;
+                right: -15px;
+            }
+        }
+
+    }
+}
+.customer {
+    margin-top: 251px;
+    padding: 0 48px;
+
+    &__inner {
+        width: 1120px;
+        height: 425px;
+        background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+        border-radius: 24px;  
+        border: 1px solid #5A98F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-bottom: 42px;
+
+        &::before {
+            content: url(/img/customer/dots1.svg);
+            position: absolute;
+            z-index: 1;
+            right: -50px;
+        }
+
+        &::after {
+            content: url(/img/customer/dots2.svg);
+            position: absolute;
+            z-index: -1;
+            left: -50px;
+            bottom: 30px;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+    }    
+    &__scroll {
+        &-arrowl {
+            width: 29px;
+            height: 18px;
+            margin-right: 90px;
+            cursor: pointer;
+            opacity: 0.3;
+        
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &-arrowr {
+            transform: rotate(-180deg);
+            width: 29px;
+            height: 18px;
+            margin-right: 90px;
+            cursor: pointer;
+            opacity: 0.3;
+        
+            &:hover {
+                opacity: 1;
+            }
+        }  
+        
+    }
+    &__title {
+        margin-top: 64px;
+        font-family: Mulish;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+    &__line {
+        width: 56px;
+        border-top: 2px solid #FFFFFF;
+        margin-bottom: 80px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+
+        &-status {
+            margin-left: 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            &-name {
+                font-family: Mulish;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 48px;
+                color: #FFFFFF;
+                margin-top: 15px;
+            }
+            &-pos {
+                font-family: Mulish;
+                font-size: 18px;
+                line-height: 48px;
+                color: rgba(255, 255, 255, 0.85);
+                margin-top: -15px;
+            }
+        }
+        &-quote {
+            width: 400px;
+            margin-left: 115px;
+            font-family: Mulish;
+            font-size: 19px;
+            line-height: 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+    }
+}
+.other {
+    margin-top: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__inner {
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: url(/img/other/4.png);
+            position: absolute;
+            z-index: -1;
+            right: -540px;
+            bottom: 5px;
+        }
+        &::before {
+            content: url(/img/other/5.svg);
+            position: absolute;
+            z-index: -1;
+            left: -10px;
+            top: 120px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-family: Mulish;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 56px;
+        color: #000000;
+        margin-bottom: 25px;
+    }
+    &__line {
+        width: 56px;
+        border-top: 2px solid black;
+        margin: 0 auto;
+
+    }
+    &__grid {
+        display: grid;
+        margin: 80px auto 0;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: 512px;
+        column-gap: 34px;
+        padding: 0 48px;
+
+        &-img {
+            margin-top: -23px;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 350px;
+            height: 512px;
+            background-color: #fff;
+            box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+            border-radius: 20px;
+        }
+        &-title {
+            margin: -20px 0 0 33px;
+            width: 260px;
+            font-family: Mulish;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 32px;
+            color: #000000;
+        }
+        &-text {
+            margin: -25px 0 0 33px;
+            width: 266px;
+            @extend .text-mulish;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 28px;
+        }
+        &-link {
+            margin: -10px 0 0 33px;
+            font-family: Mulish;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 28px;
+            color: #4089ED;
+            position: relative;
+
+            &::after {
+                content: url(/img/other/arrow.png);
+                position: absolute;
+                left: 85px;
+            }
+        }
+    }
+    &__button {
+        margin: 70px 510px 0;
+        width: 200px;
+        height: 60px;
+        background-color: #fff;
+        border-color: #458FF6;
+        border-radius: 50px;
+
+        font-family: Mulish;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 60px;
+        color: #458FF6;
+        cursor: pointer;
+
+        &:hover {
+            background: #297ef5;
+            color: #FFFFFF;
+            transition: 0.3s;   
+        }
+    }
+}
+.footer {
+    margin-top: 204px;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+
+    &__inner {
+        padding: 115px 50px 115px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: url(/img/footer/dotsr.png);
+            position: absolute;
+            z-index: -1;
+            right: -80px;
+            top: -70px;
+        }
+
+        &::after {
+            content: url(/img/footer/dotsl.png);
+            position: absolute;
+            z-index: 1;
+            left: -200px;
+            bottom: -15px;
+        }
+    }
+    &__trafalgar {
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-text {
+            margin-top: 22px;
+            font-family: Mulish;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        &-rights {
+            margin-top: 31px;
+            font-family: Mulish;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+    }
+    &__nav {
+        height: 214px;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__company {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-col {
+            margin-top: 0px;
+            height: 152px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-item {
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 38px;
+                color: #FFFFFF;
+            }
+        }
+
+        &-title {
+            font-family: Mulish;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 60px;
+            color: #FFFFFF;
+        }
+    }
+    &__company + &__company {
+        margin-left: 170px;
+    }
 }
